@@ -21,7 +21,7 @@ client.on("ready",() =>{
 
 client.on("messageCreate",(message)=>{
     if(message.content === "hi"){
-        message.reply("Hello");
+        message.guild.channels.cache.get(message.channel.id).send(`Hello <@${message.member.id}>`)
     }
 })
 
