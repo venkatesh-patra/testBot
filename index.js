@@ -24,7 +24,7 @@ client.on("messageCreate",(message)=>{
         message.guild.channels.cache.get(message.channel.id).send(`Hello <@${message.member.id}>`)
     }
 
-    //memberCounts code
+    //memberCount code
     if(message.content === "membercount"){
         message.reply(`There are ${message.guild.memberCount} members in the server!!`)
     }
