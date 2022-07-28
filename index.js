@@ -23,6 +23,11 @@ client.on("messageCreate",(message)=>{
     if(message.content === "hi"){
         message.guild.channels.cache.get(message.channel.id).send(`Hello <@${message.member.id}>`)
     }
+
+    //memberCounts code
+    if(message.content === "membercount"){
+        message.reply(`There are ${message.guild.memberCount} members in the server!!`)
+    }
 })
 
 const welcomeID = "1001495432767221801"
